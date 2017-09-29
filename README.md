@@ -1,4 +1,4 @@
-https://akspellm.github.io/TriviaGame/
+https://akspellm.github.io/GifTastic/
 
 # GifTastic!
 
