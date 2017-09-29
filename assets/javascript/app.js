@@ -1,29 +1,18 @@
-
-var list = JSON.parse(sessionStorage.getItem("gitList"))
-
-if (!Array.isArray(list)) {
-	list = [];
-	var gifList = ["cat", "otter", "ostrich", "frog", "crab", "starfish", "dinodaur", "tapeworm", "sea urchin", "snow leopard"];
-}
-
-function putOnPage () {
-	$("#animal-buttons").empty();
-
-var insideList = JSON.parse(sessionStorage.getItem("gitList"));
-
-if(!Array.isArray(insideList)) {
-	insideList = [];
-}
-
-for (var k = 0; k < insideList.length; k++){
-	var newButton = $("<button class='btn btn-primary animal-button'>");
-	newButton.text(gifList[k]).attr("data-attr", gifList[k]);
-	$("#animal-buttons").append(newButton);
-}
-}
+var gifList = ["cat", "otter", "ostrich", "frog", "crab", "starfish", "dinodaur", "tapeworm", "sea urchin", "snow leopard"];
 
 
-putOnPage();
+// function putOnPage () {
+// 	$("#animal-buttons").empty();
+
+// 	for (var k = 0; k < gifList.length; k++){
+// 		var newButton = $("<button class='btn btn-primary animal-button'>");
+// 		newButton.text(gifList[k]).attr("data-attr", gifList[k]);
+// 		$("#animal-buttons").append(newButton);
+// 	}
+// 	}
+
+
+// putOnPage();
 
 
 
