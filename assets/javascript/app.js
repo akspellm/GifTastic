@@ -1,19 +1,4 @@
-var gifList = ["cat", "otter", "ostrich", "frog", "crab", "starfish", "dinodaur", "tapeworm", "sea urchin", "snow leopard"];
-
-
-// function putOnPage () {
-// 	$("#animal-buttons").empty();
-
-// 	for (var k = 0; k < gifList.length; k++){
-// 		var newButton = $("<button class='btn btn-primary animal-button'>");
-// 		newButton.text(gifList[k]).attr("data-attr", gifList[k]);
-// 		$("#animal-buttons").append(newButton);
-// 	}
-// 	}
-
-
-// putOnPage();
-
+var gifList = ["cat", "otter", "ostrich", "frog", "crab", "starfish", "dinosaur", "tapeworm", "sea urchin", "snow leopard"];
 
 
 function makeButtons() {
@@ -82,6 +67,8 @@ $(document.body).on("click", ".animal-button", function() {
 	}
 
 	instructionText();
+
+	})
 	
 
 	$(document.body).on("click", ".animal", function(){
@@ -93,6 +80,6 @@ $(document.body).on("click", ".animal-button", function() {
 			$(this).attr("data-attr", "still");
 		}
 	})
-})
+
 
 
